@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Anggota JKT48 Generasi 11</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        body {
+            font-family: 'Montserrat', sans-serif;
+          
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+            background-color: #FF832D;
+            padding: 10px;
+            border-radius: 8px;
+           
+        }
+ .menu-container {
+    display: flex;
+    flex-wrap: nowrap; /* Mencegah wrap */
+    gap: 8px; /* Jarak antar menu */
+    overflow-x: auto; /* Scroll hanya untuk menu */
+    white-space: nowrap; /* Pastikan teks tetap dalam satu baris */
+    padding: 10px 0; /* Padding agar tidak terpotong */
+    max-width: max-content; /* Agar tidak melebihi layar */
+    -webkit-overflow-scrolling: touch; /* Scroll lebih smooth di Android */
+    position: relative;
+}
+
+
+
+/* Styling scrollbar agar lebih kecil dan rapi */
+.menu-container::-webkit-scrollbar {
+    height: 3px; /* Ukuran scrollbar horizontal */
+}
+
+.menu-container::-webkit-scrollbar-thumb {
+    background: #aaa; /* Warna thumb scrollbar */
+    border-radius: 10px;
+}
+
+.menu-container::-webkit-scrollbar-track {
+    background: transparent; /* Track transparan */
+}
+
+.Gen12 {
+    display: inline-block;
+    background: linear-gradient(135deg, #f0f0f0, #d6d6d6);
+    padding: 5px 10px; /* Sesuaikan padding */
+    border: 1px solid #5555;
+    text-align: center;
+    color: #33333 !important;
+    border-radius: 5px;
+    overflow: hidden;
+    font-size: 16px;
+    min-width: max-content;
+    font-weight: bold;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    white-space: nowrap; /* Supaya teks tidak turun */
+    cursor: pointer; /* Menunjukkan ini bisa diklik */
+}
+
+.Gen12::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    width: 120%;
+    height: 50px;
+    transform: translateX(-50%) rotate(-5deg);
+    border-radius: 50%;
+    filter: blur(8px);
+    pointer-events: none;
+}
+.Gen10 {
+    display: inline-block;
+    background: linear-gradient(135deg, #f0f0f0, #d6d6d6) !important;
+    padding: 5px 10px; /* Sesuaikan padding */
+    border: 1px solid #5555;
+    text-align: center;
+    color: #33333 !important;
+    min-width: max-content;
+    border-radius: 5px;
+    overflow: hidden;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    white-space: nowrap; /* Supaya teks tidak turun */
+    cursor: pointer; /* Menunjukkan ini bisa diklik */
+}
+.Gen9 {
+    display: inline-block;
+    background: linear-gradient(135deg, #f0f0f0, #d6d6d6);
+    padding: 5px 10px; /* Sesuaikan padding */
+    border: 1px solid #5555;
+    text-align: center;
+    color: #33333 !important;
+    min-width: max-content;
+    border-radius: 5px;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    white-space: nowrap; /* Supaya teks tidak turun */
+    cursor: pointer; /* Menunjukkan ini bisa diklik */
+}
+.Gen8 {
+    display: inline-block;
+    background: linear-gradient(135deg, #f0f0f0, #d6d6d6) !important;
+    padding: 5px 10px; /* Sesuaikan padding */
+    border: 1px solid #5555;
+    text-align: center;
+    color: #33333 !important;
+    min-width: max-content;
+    border-radius: 5px;
+    overflow: hidden;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    white-space: nowrap; /* Supaya teks tidak turun */
+    cursor: pointer; /* Menunjukkan ini bisa diklik */
+}
+.Gen7 {
+    display: inline-block;
+    background: linear-gradient(135deg, #f0f0f0, #d6d6d6);
+    color: #33333 !important;
+    padding: 5px 10px; /* Sesuaikan padding */
+    border: 1px solid #5555;
+    text-align: center;
+    min-width: max-content;
+    border-radius: 5px;
+    overflow: hidden;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    white-space: nowrap; /* Supaya teks tidak turun */
+    cursor: pointer; /* Menunjukkan ini bisa diklik */
+}
+.Gen6 {
+    display: inline-block;
+    background: linear-gradient(135deg, #f0f0f0, #d6d6d6);
+    padding: 5px 10px; /* Sesuaikan padding */
+    border: 1px solid #5555;
+    text-align: center;
+    min-width: max-content;
+    border-radius: 5px;
+    overflow: hidden;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    white-space: nowrap; /* Supaya teks tidak turun */
+    cursor: pointer; /* Menunjukkan ini bisa diklik */
+}
+.Gen3 {
+    display: inline-block;
+    background: linear-gradient(135deg, #f0f0f0, #d6d6d6);
+    padding: 5px 10px; /* Sesuaikan padding */
+    border: 1px solid #5555;
+    text-align: center;
+    min-width: max-content;
+    border-radius: 5px;
+    overflow: hidden;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    white-space: nowrap; /* Supaya teks tidak turun */
+    cursor: pointer; /* Menunjukkan ini bisa diklik */
+}
+.Gen13 {
+    display: inline-block;
+    background: linear-gradient(135deg, #f0f0f0, #d6d6d6);
+    padding: 5px 10px; /* Sesuaikan padding */
+    border: 1px solid #5555;
+    text-align: center;
+    min-width: max-content;
+    border-radius: 5px;
+    overflow: hidden;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    white-space: nowrap; /* Supaya teks tidak turun */
+    cursor: pointer; /* Menunjukkan ini bisa diklik */
+}
+.menu-container a {
+color: black;
+}
+      
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background-color: #f9f9f9;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #5555;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+        li img {
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+            border: 1px solid #5555;
+            border-radius: 50%;
+            object-fit: cover
+        }
+        a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Daftar Anggota JKT48 Generasi 11</h1>
+    <div class="menu-container">
+    	<div class="Gen13"><a href= "Gen13.html"> Gen 13 </a></div>
+    <div class="Gen12"><a href= "Gen12.html"> Gen 12 </a>  </div>
+    <div class="Gen10"><a href= "Gen10.html"> Gen 10 </a></div>
+    <div class="Gen9"><a href= "Gen9.html"> Gen 9</a></div>
+    <div class="Gen8"><a href= "Gen8.html"> Gen 8</a></div>
+    <div class="Gen7"><a href= "Gen7.html"> Gen 7</a></div>
+    <div class="Gen6"><a href= "Gen6.html"> Gen 6</a></div>
+    <div class="Gen3"><a href= "Gen3.html"> Gen 3</a></div>
+    </div>
+    
+    <ul>
+        <li>
+            <img src="https://pbs.twimg.com/profile_images/1873029006586724354/Z5vwYRDR.jpg" alt="Alya Amanda (Alya)">
+            <div>
+                <strong>Alya Amanda (Alya)</strong><br>
+                <p>IG: <a href="https://www.instagram.com/jkt48.alya_?igsh=YzljYTk1ODg3Zg==" target="_blank">@jkt48.alya_</a></p>
+              <p>Twitter: <a href="https://x.com/AA_AlyaJKT48?s=09" target="_blank">@AA_AlyaJKT48</a></p>
+            </div>
+        </li>
+        <li>
+            <img src="https://pbs.twimg.com/profile_images/1895490808377438208/PmD5D5FL.jpg" alt="Cathleen Nixie (Cathy)">
+            <div>
+                <strong>Cathleen Nixie (Cathy)</strong><br>
+                <p>IG: <a href="https://www.instagram.com/jkt48.cathy" target="_blank">@jkt48.cathy</a></p>
+                <p>Twitter: <a href="https://x.com/N_CathyJKT48?s=09" target="_blank">@N_CathyJKT48</a></p>
+            </div>
+        </li>
+        <li>
+            <img src="https://pbs.twimg.com/profile_images/1871393804538015744/P0BAYvZI.jpg" alt="Anidya Ramadhani (Anindya)">
+            <div>
+                <strong>Anidya Ramadhani (Anindya)</strong><br>
+                <p>IG: <a href="https://www.instagram.com/jkt48.anindya_" target="_blank">@jkt48.anindya_</a></p>
+                <p>Twitter: <a href="https://x.com/AR_AnindyaJKT48?s=09" target="_blank">@AR_AnindyaJKT48</a></p>
+            </div>
+        </li>
+        <li>
+            <img src="https://pbs.twimg.com/profile_images/1868796102415380480/CzMXB7xQ.jpg" alt="Celline Thefani (Elin)">
+            <div>
+                <strong>Celline Thefani (Elin)</strong><br>
+                <p>IG: <a href="https://www.instagram.com/jkt48.elin_" target="_blank">@jkt48.elin_</a></p>
+                <p>Twitter: <a href="https://x.com/Elin_JKT48?s=09" target="_blank">@Elin_JKT48</a></p>
+            </div>
+        </li>
+        <li>
+            <img src="https://pbs.twimg.com/profile_images/1889963650339024896/22bKvSoo.jpg" alt="Chelsea Davina (Chelsea)">
+            <div>
+                <strong>Chelsea Davina (Chelsea)</strong><br>
+                <p>IG: <a href="https://www.instagram.com/jkt48.chelsea.d" target="_blank">@jkt48.chelsea.d</a></p>
+                <p>Twitter: <a href="https://x.com/DC_ChelseaJKT48?s=09" target="_blank">@DC_ChelseaJKT48</a></p>
+            </div>
+        </li>
+        <li>
+            <img src="https://pbs.twimg.com/profile_images/1885954055924801536/agKc0rTX.jpg" alt="Cynthia Yaputera (Cynthia)">
+            <div>
+                <strong>Cynthia Yaputera (Cynthia)</strong><br>
+                <p>IG: <a href="https://www.instagram.com/jkt48.cynthia" target="_blank">@jkt48.cynthia</a></p>
+                <p>Twitter: <a href="https://x.com/Y_CynthiaJKT48?s=09" target="_blank">@Y_CynthiaJKT48</a></p>
+            </div>
+        </li>
+        <li>
+            <img src="https://pbs.twimg.com/profile_images/1872148105690578944/CNEu5M6q.jpg" alt="Danella Natalia (Dena)">
+            <div>
+                <strong>Dena Natalia (Dena)</strong><br>
+                <p>IG: <a href="https://www.instagram.com/jkt48.danella" target="_blank">@jkt48.danella</a></p>
+                <p>Twitter: <a href="https://x.com/Danella_JKT48?s=09" target="_blank">@Danella_JKT48</a></p>
+            </div>
+        </li>
+        <li>
+            <img src="https://pbs.twimg.com/profile_images/1890238354266157058/n2GqvgqX.jpg" alt="Desy Natalia (Daisy)">
+            <div>
+                <strong>Desy Natalia (Daisy)</strong><br>
+                <p>IG: <a href="https://www.instagram.com/jkt48.daisy" target="_blank">@jkt48.daisy</a></p>
+                <p>Twitter: <a href="https://x.com/Daisy_JKT48?s=09" target="_blank">@Daisy_JKT48</a></p>
+            </div>
+        </li>
+        <li>
+            <img src="https://pbs.twimg.com/profile_images/1872166241655480320/42q3ofnP.jpg" alt="Gendis Mayrannisa (Gendis)">
+            <div>
+                <strong>Gendis Mayrannisa (Gendis)</strong><br>
+                <p>IG: <a href="https://www.instagram.com/jkt48.gendis" target="_blank">@jkt48.gendis</a></p>
+                <p>Twitter: <a href="https://x.com/Gendis_JKT48?s=09" target="_blank">@Gendis_JKT48</a></p>
+            </div>
+        </li>
+        <li>
+            <img src="https://pbs.twimg.com/profile_images/1895314961339240448/tKfo9eIV.jpg" alt="Grace Octaviani (Gracie)">
+            <div>
+                <strong>Grace Octaviani (Gracie)</strong><br>
+                <p>IG: <a href="https://www.instagram.com/jkt48.gracie" target="_blank">@jkt48.gracie</a></p>
+                <p>Twitter: <a href="https://x.com/Gracie_JKT48?s=09" target="_blank">@Gracie_JKT48</a></p>
+            </div>
+        </li>
+        <li>
+            <img src="https://pbs.twimg.com/profile_images/1893303417935929345/EEgCZ9YH.jpg" alt="Greesella Adhalia (Greesel)">
+            <div>
+                <strong>Greesella Adhalia (Greesel)</strong><br>
+                <p>IG: <a href="https://www.instagram.com/jkt48.greesel" target="_blank">@jkt48.greesel</a></p>
+              <p>Twitter: <a href="https://x.com/Greesel_JKT48?s=09" target="_blank">@Greesel_JKT48</a></p>
+            </div>
+        </li>
+        <li>
+            <img src="https://pbs.twimg.com/profile_images/1870891943213006848/YrDrESNA.jpg" alt="Michelle Alexandra (Michie)">
+            <div>
+                <strong>Michelle Alexandra (Michie)</strong><br>
+                <p>IG: <a href="https://www.instagram.com/jkt48.michie_" target="_blank">@jkt48.michie_</a></p>
+                <p>Twitter: <a href="https://x.com/Michie_JKT48?s=09" target="_blank">@Michie_JKT48</a></p>
+            </div>
+        </li>
+        
+    </ul>
+</body>
+</html>
